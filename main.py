@@ -27,7 +27,7 @@ async def send_car_prices():
 async def scheduler():
     while True:
         now = datetime.now()
-        if now.hour == 9 and now.minute == 0:
+        if now.hour == 5 and now.minute == 37:
             await send_car_prices()
             await asyncio.sleep(60)  # bir daqiqa kutish, takrorlanmasin
         await asyncio.sleep(30)
